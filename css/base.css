@@ -15,16 +15,7 @@ ul {
   background-color: gray;
 }
 
-nav a {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  text-align: center;
-  width: 10%;
-  transition-duration: .3s;
-  background-color: gray;
-  padding: 1%;
-}
+
 
 nav a:hover {
   background-color: white;
