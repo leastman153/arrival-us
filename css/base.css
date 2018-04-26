@@ -6,6 +6,9 @@
 
   Filename: base.css
 */
+body{
+  background: linear-gradient( #acc5cb, #73c7dc);
+}
 nav{
  background:linear-gradient(45deg, rgb(187,19,62) 20%, rgb(0,10,130), rgb(211,211,211) 90%);
  width: 100%;
