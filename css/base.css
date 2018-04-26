@@ -15,14 +15,21 @@ ul {
   background-color: gray;
 }
 
-
+nav{
+ background:linear-gradient(90deg, red , white);
+}
 
 nav a:hover {
-  background-color: white;
+  background:white ;
   color: black;
-  width: 20%;
 }
 
 nav a:visited, a:link {
   text-decoration: none;
+}
+
+header img{
+ width: 5%;
+ length: 5%;
+ float: right
 }
