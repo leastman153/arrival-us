@@ -6,22 +6,25 @@
 
   Filename: base.css
 */
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: gray;
-}
-
 nav{
- background:linear-gradient(90deg, red , white);
+ background:linear-gradient(45deg, rgb(187,19,62) 20%, rgb(0,10,130), rgb(211,211,211) 90%);
+ width: 100%;
+ length: auto;
+ line-height: 350%;
+
 }
+
+nav a {
+  margin-left: 2%;
+  margin-right:2%;
+  color: white;
+}
+
 
 nav a:hover {
-  background:white ;
-  color: black;
+  color: rgb(0,144,255);
+  text-decoration-style: solid;
+  text-decoration: underline;
 }
 
 nav a:visited, a:link {
