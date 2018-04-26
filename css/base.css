@@ -1,0 +1,28 @@
+/*
+  arrival-us website
+
+  Authors: Lucas Eastman, Dylan Jones-Miller, Charley Tran
+  Date: 4.25.18
+
+  Filename: base.css
+*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+
+
+
+nav a:hover {
+  background-color: white;
+  color: black;
+  width: 20%;
+}
+
+nav a:visited, a:link {
+  text-decoration: none;
+}
