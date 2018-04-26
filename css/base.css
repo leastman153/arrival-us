@@ -33,3 +33,12 @@ header img{
  length: 5%;
  float: right
 }
+
+footer {
+  margin-top: 5%;
+  text-align: center;
+}
+
+section#copyright {
+  padding-top: 1%;
+}
