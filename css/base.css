@@ -7,7 +7,7 @@
   Filename: base.css
 */
 body{
-  /*background: linear-gradient(#10b7e7, #d44d4d)*/
+  /*background: linear-gradient( #b8d3db 50%, #10b7e7)*/
 }
 nav{
  background: rgb(211,211,211);
@@ -47,4 +47,18 @@ footer {
 
 section#copyright {
   padding-top: 1%;
+}
+section#landing {
+  text-align:center;
+  padding-top: 5%;
+
+}
+section#landing h1{
+  margin: 0 0 0.25em 0;
+  text-shadow: 0.5px 0.5px red;
+}
+section#landing h3{
+  margin-left: auto;
+  margin-bottom: 2em;
+  text-shadow: 0.5px 0.5px rgb(0,10,130)
 }
