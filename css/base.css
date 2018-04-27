@@ -131,5 +131,25 @@ section#landing h1{
 section#landing h3{
   margin-left: auto;
   margin-bottom: 2em;
-  text-shadow: 0.5px 0.5px rgb(0,10,130)
+  text-shadow: 0.5px 0.5px red;
+}
+div.col p{
+  text-indent: 2em;
+
+}
+div.col img{
+  width: 80%;
+  height: 90%;
+  border: ridge .5em;
+  border-radius: 2em;
+  border-color: purple;
+  position: absolute;
+  left: 50px;
+
+}
+hr{
+  display: block;
+  border: inset;
+  border-width: 1px;
+  border-color: purple;
 }
