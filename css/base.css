@@ -7,10 +7,10 @@
   Filename: base.css
 */
 body{
-  background: linear-gradient( #b8d3db 50%, #10b7e7)
+  /*background: linear-gradient(#10b7e7, #d44d4d)*/
 }
 nav{
- background:linear-gradient(45deg, rgb(187,19,62) 20%, rgb(0,10,130), rgb(211,211,211) 90%);
+ background: rgb(211,211,211);
  width: 100%;
  length: auto;
  line-height: 350%;
