@@ -6,9 +6,43 @@
 
   Filename: base.css
 */
-body{
+
+body {
   /*background: linear-gradient(#10b7e7, #d44d4d)*/
+  background:linear-gradient(0deg, rgb(187,19,62) 20%, rgb(0,10,130), rgb(211,211,211) 90%);
+  background-color: black;
 }
+
+main {
+  display: block;
+  background-color: white;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+section#landing {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 5%;
+}
+
+section#landing img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+section#landing h3 {
+  padding: 3%;
+}
+
 nav{
  background: rgb(211,211,211);
  width: 100%;
@@ -41,8 +75,9 @@ header img{
 }
 
 footer {
-  margin-top: 5%;
+  margin: 5%;
   text-align: center;
+  color: white;
 }
 
 section#copyright {
