@@ -7,11 +7,19 @@
   Filename: base.css
 */
 
+/* ########## */
+/* Body */
+/* ########## */
+
 body {
   /*background: linear-gradient(#10b7e7, #d44d4d)*/
   background:linear-gradient(0deg, rgb(187,19,62) 20%, rgb(0,10,130), rgb(211,211,211) 90%);
   background-color: black;
 }
+
+/* ########## */
+/* Main */
+/* ########## */
 
 main {
   display: block;
@@ -23,6 +31,10 @@ main {
   padding: 5%;
   border-radius: 10px;
 }
+
+/* ############# */
+/* Landing */
+/* ############# */
 
 section#landing {
   display: block;
@@ -43,7 +55,11 @@ section#landing h3 {
   padding: 3%;
 }
 
-nav{
+/* ############ */
+/* Header */
+/* ############ */
+
+nav {
  background: rgb(211,211,211);
  width: 100%;
  length: auto;
@@ -73,6 +89,10 @@ header img{
  length: 5%;
  float: right
 }
+
+/* ############ */
+/* Footer */
+/* ############ */
 
 footer {
   margin: 5%;
