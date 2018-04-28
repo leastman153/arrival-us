@@ -6,45 +6,182 @@
 
   Filename: base.css
 */
-body{
+
+/* ########## */
+/* Body */
+/* ########## */
+
+body {
   /*background: linear-gradient(#10b7e7, #d44d4d)*/
-}
-nav{
- background: rgb(211,211,211);
- width: 100%;
- length: auto;
- line-height: 350%;
-
+  background:linear-gradient(0deg, rgb(187,19,62) 20%, rgb(0,10,130), rgb(211,211,211) 90%);
+  background-color: black;
 }
 
-nav a {
-  margin-left: 2%;
-  margin-right:2%;
+/* ########## */
+/* Main */
+/* ########## */
+
+main {
+  display: block;
+  background-color: white;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+hr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+section#about {
+  padding: 5%;
+}
+
+section#sections {
+  padding: 5%;
+}
+
+/* ############# */
+/* Landing */
+/* ############# */
+
+section#landing {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 5%;
+}
+
+section#landing img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+section#landing h3 {
+  padding: 3%;
+}
+
+/* ############ */
+/* Header */
+/* ############ */
+
+header img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15%;
+  length: 15%;
+}
+
+/* ################## */
+/* Floating Nav */
+/* ################## */
+
+#floatingnav {
+  display: flex;
+  flex: row nowrap;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  width: 50%;
+}
+
+#floatingnav a {
+  width: 25%;
+  padding: 10px 0;
+  text-align: center;
   color: white;
+  background: rgb(211,211,211, 95%);
+  border-bottom: 3px solid rgb(211,211,211, 95%);
+  transition: width 0.35s, color 0.5s, background-color 1s, border-bottom 1s;
 }
 
-
-nav a:hover {
-  color: rgb(0,144,255);
-  text-decoration-style: solid;
-  text-decoration: underline;
+#floatingnav a:first-of-type {
+  border-bottom-left-radius: 10px;
 }
 
-nav a:visited, a:link {
+#floatingnav a:hover {
+  width: 45%;
+  /*color: rgb(0,144,255);*/
+  color: black;
+  background-color: rgb(250, 250, 250);
+  border-bottom: 3px solid gray;
+}
+
+#floatingnav a:visited, a:link {
   text-decoration: none;
 }
 
-header img{
- width: 5%;
- length: 5%;
- float: right
+/* ########## */
+/* Main */
+/* ########## */
+
+main {
+  display: block;
+  background-color: white;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding: 5%;
+  border-radius: 10px;
 }
 
+/* ############ */
+/* Footer */
+/* ############ */
+
 footer {
-  margin-top: 5%;
+  margin: 5%;
   text-align: center;
+  color: white;
 }
 
 section#copyright {
   padding-top: 1%;
+}
+section#landing {
+  text-align:center;
+  padding-top: 5%;
+
+}
+section#landing h1{
+  margin: 0 0 0.25em 0;
+  text-shadow: 0.5px 0.5px red;
+}
+section#landing h3{
+  margin-left: auto;
+  margin-bottom: 2em;
+  text-shadow: 0.5px 0.5px red;
+}
+div.col p{
+  text-indent: 2em;
+
+}
+div.col img{
+  width: 80%;
+  height: 90%;
+  border: ridge .5em;
+  border-radius: 2em;
+  border-color: purple;
+  position: absolute;
+  left: 50px;
+
+}
+hr{
+  display: block;
+  border: inset;
+  border-width: 1px;
+  border-color: purple;
 }
