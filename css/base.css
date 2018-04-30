@@ -136,3 +136,35 @@ footer {
 section#copyright {
   padding-top: 1%;
 }
+section#landing {
+  text-align:center;
+  padding-top: 5%;
+
+}
+section#landing h1{
+  margin: 0 0 0.25em 0;
+  text-shadow: 0.5px 0.5px red;
+}
+section#landing h3{
+  margin-left: auto;
+  margin-bottom: 2em;
+  text-shadow: 0.5px 0.5px red;
+}
+
+div.col img{
+  width: 80%;
+  height: 90%;
+  border: ridge .5em;
+  border-radius: 2em;
+  border-color: purple;
+  position: absolute;
+  left: 50px;
+
+}
+
+hr{
+  display: block;
+  border: inset;
+  border-width: 1px;
+  border-color: purple;
+}
