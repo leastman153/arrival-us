@@ -134,10 +134,37 @@ section#copyright {
   padding-top: 1%;
 }
 
-@media screen and (max-width: 500px) {
-  nav#floatingnav {
-    line-height: 1em;
-    font-size: .5em;
+/*@media only screen and (max-width: 560px) {
+
+  #floatingnav {
+    display: hidden;
+  }
+
+  body {
+    background-color: gray;
+  }
+
+}*/
+
+@media only screen and (max-width: 500px) {
+  header {
+    display: none;
+  }
+
+  #landing img {
     width: 100%;
+  }
+
+  main {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #about div {
+    width: 100%;
+  }
+
+  #about div:first-of-type {
+    margin-bottom: 10%;
   }
 }
