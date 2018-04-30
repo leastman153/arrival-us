@@ -7,10 +7,6 @@
   Filename: base.css
 */
 
-@media only screen and (max-width: 360px) {
-  
-}
-
 /* ########## */
 /* Body */
 /* ########## */
@@ -18,7 +14,7 @@
 body {
   /*background: linear-gradient(#10b7e7, #d44d4d)*/
   background:linear-gradient(0deg, rgb(187,19,62) 20%, rgb(0,10,130), rgb(211,211,211) 90%);
-  background-color: black;
+  /*background-color: black;*/
 }
 
 /* ########## */
@@ -29,10 +25,7 @@ main {
   display: block;
   background-color: white;
   width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15%;
-  padding: 5%;
+  margin: 15% auto 5%;
   border-radius: 10px;
 }
 

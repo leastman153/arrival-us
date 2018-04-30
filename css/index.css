@@ -33,17 +33,6 @@ section#landing h3{
 /* Main */
 /* ########## */
 
-main {
-  display: block;
-  background-color: white;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  /* padding: 5%; */
-  border-radius: 10px;
-}
-
 div.col img{
   width: 80%;
   height: 90%;
