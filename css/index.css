@@ -42,10 +42,6 @@ main {
   border-radius: 10px;
 }
 
-div.col p{
-  text-indent: 2em;
-}
-
 div.col img{
   width: 80%;
   height: 90%;
