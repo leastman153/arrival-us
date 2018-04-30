@@ -10,7 +10,9 @@
 /* ############# */
 /* Landing */
 /* ############# */
-
+a#navicon{
+ display: none;
+}
 section#landing {
   text-align:center;
   padding-top: 5%;
@@ -42,9 +44,7 @@ main {
   border-radius: 10px;
 }
 
-div.col p{
-  text-indent: 2em;
-}
+
 
 div.col img{
   width: 80%;
