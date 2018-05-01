@@ -6,70 +6,56 @@
     <!-- <link rel="stylesheet" href="../css/base.css"> -->
   </head>
   <body>
-  <form id="payment" name="payment" method="post" action="co_temp.html">
-            <fieldset id="creditcard">
-                <legend>Credit Information</legend>
+    <form id="payment" action="index.html" method="post">
+      <fieldset id = "donateInfo">
+        <legend>Donator Information</legend>
+      <div class="formRow">
+        <label for="name">Name</label>
+        <input type="text" name="donateName" id="name" required>
+      </div>
+      <div class="formRow">
+        <label for="creditCard">Credit Card Number</label>
+        <input type="text" name="creditNumber" id="number" required>
+      </div>
 
-                <label for="cardName">Name*</label>
-                <input name="cardName" id="cardName" required type="text" />
+      <div class="formRow">
+        <label for="cardType">Credit Card Type</label>
+        <select id = "type" name="cardType">
+          <option value="discover">Discover</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="visa" selected>Visa</option>
+          <<option value="americanExpress"> American Express</option>
+        </select>
+      </div>
 
-                <fieldset id="cards">
-                    <label class="cardLabel">Credit Card*</label>
-                    <label class="cardLabel">
-                  <input name="credit" value="amex" type="radio" required />
-                  <img src="co_amex.png" alt="American Express" />
-               </label>
-                    <label class="cardLabel">
-                  <input name="credit" value="discover" type="radio" />
-                  <img src="co_discover.png" alt="Discover" />
-               </label>
-                    <label class="cardLabel">
-                  <input name="credit" value="master" type="radio"  />
-                  <img src="co_master.png" alt="MasterCard" />
-               </label>
-                    <label class="cardLabel">
-                  <input name="credit" value="visa" type="radio"  />
-                  <img src="co_visa.png" alt="Visa" />
-               </label>
-                </fieldset>
+      <div class="formRow">
+        <label for="cardDate">Card Expiration Date</label>
+        <input type="date" name="donateName" id="name" required>
+      </div>
 
-                <label for="cardNumber">Credit Card Number*</label>
-                <input name="cardNumber" id="cardNumber" required type="text" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
 
-                <label for="expMonth">Expiration Date*</label>
-                <select id="expMonth" name="expMonth">
-               <option value="mm">mm</option>
-               <option value="01">01</option>
-               <option value="01">02</option>
-               <option value="01">03</option>
-               <option value="01">04</option>
-               <option value="01">05</option>
-               <option value="01">06</option>
-               <option value="01">07</option>
-               <option value="01">08</option>
-               <option value="01">09</option>
-               <option value="01">10</option>
-               <option value="01">11</option>
-               <option value="01">12</option>
-            </select>
-                <span> / </span>
-                <select id="expYear" name="expYear">
-               <option value="yy">yy</option>
-               <option value="2018">2018</option>
-               <option value="2019">2019</option>
-               <option value="2020">2020</option>
-               <option value="2021">2021</option>
-               <option value="2022">2022</option>
-            </select>
 
-                <label for="cvc">CVC*</label>
-                <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text" />
-            </fieldset>
+      <div class="formRow">
+        <label for="cvc">CVC</label>
+        <input type="text" name="cvc" id="cardCVC" required>
+      </div>
 
-            <p id="footnote">* - Required Item</p>
-            <input type="submit" id="subButton" value="Submit Payment" />
-        </form>
+      <label for="amount">How Much do you want to donate?</label>
+      <input type="text" name="dAmount" id="donate" list="amount">
+      <datalist id="amount" name="dAmount" size= "5">
+        <option value="$5"></option>
+        <option value="$10"></option>
+        <option value="$20"></option>
+        <option value="$50"></option>
+        <option value="$100"></option>
 
-    </section>
+      </datalist>
+
+      </fieldset>
+
+    </form>
+
+
+    <script src= "donate.js"></script>
 </body>
 </html>
