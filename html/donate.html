@@ -2,10 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/donate.css">
+    <link rel="stylesheet" href="../css/base.css">
     <title>Donate Page</title>
     <!-- <link rel="stylesheet" href="../css/base.css"> -->
   </head>
   <body>
+    <header>
+      <img src="../images/logo.png" alt="logo">
+    </header>
     <form id="payment" action="index.html" method="post">
       <fieldset id = "donateInfo">
         <legend>Donator Information</legend>
@@ -14,8 +19,31 @@
         <input type="text" name="donateName" id="name" required>
       </div>
       <div class="formRow">
+        <label for="street">Street</label>
+        <input type="text" name="donateStreet" id="street" required>
+      </div>
+      <div class="formRow">
+        <label for="city">City</label>
+        <input type="city" name="donateCity" id="city" required>
+      </div>
+
+      <div class="formRow">
+        <label for="state">State</label>
+        <input type="text" name="donateState" id="state" required>
+      </div>
+      <div class="formRow">
+        <label for="zip">Zip</label>
+        <input type="text" name="donateZip" id="name" required>
+      </div>
+      <div class="formRow">
         <label for="creditCard">Credit Card Number</label>
-        <input type="text" name="creditNumber" id="number" required>
+        <input type="text" name="creditNumber" id="number" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$">
+      </div>
+
+      <div class="formRow">
+        <label for="cvc">CVC</label>
+        <input type="text" name="cvc" id="cardCVC" pattern="^\d{3,4}$" required>
+
       </div>
 
       <div class="formRow">
@@ -30,15 +58,36 @@
 
       <div class="formRow">
         <label for="cardDate">Card Expiration Date</label>
-        <input type="date" name="donateName" id="name" required>
+        <select id="expMonth" name="expMonth">
+          <option value="mm">mm</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+       </select>
+       <span> / </span>
+       <select id="expYear" name="expYear">
+         <option value="yy">yy</option>
+         <option value="18">2018</option>
+         <option value="19">2019</option>
+         <option value="20">2020</option>
+         <option value="21">2021</option>
+         <option value="22">2022</option>
+
+       </select>
       </div>
 
 
 
-      <div class="formRow">
-        <label for="cvc">CVC</label>
-        <input type="text" name="cvc" id="cardCVC" required>
-      </div>
+
 
       <label for="amount">How Much do you want to donate?</label>
       <input type="text" name="dAmount" id="donate" list="amount">
@@ -51,9 +100,49 @@
 
       </datalist>
 
+      <!-- buttons -->
+      <div id = "buttons">
+        <input type="submit" value="Donate">
+        <input type="reset" value="Cancel">
+
       </fieldset>
 
+
     </form>
+
+    <footer>
+      <section id="contact">
+        <div class="row">
+          <div class="col">
+            <h5>Address</h5>
+            <p>1234 N. Nowhere St. - City, AZ 00000</p>
+          <div>
+          <div class="col">
+            <h5>Phone</h5>
+            <p>(123) 456-7890</p>
+          </div>
+          <div class="col">
+            <h5>Email</h5>
+            <p>arrivalusbusiness@gmail.com</p>
+          </div>
+        </div>
+      </section>
+      <section id="copyright">
+        <p>© Arrival U.S. Text Goes Here</p>
+      </section>
+    </footer>
+
+    <nav id="floatingnav">
+        <a  href="index.html">Home</a>
+        <a  href="help.html">Get Help</a>
+        <a  href="involved.html">Get Involved</a>
+        <a href="info.html">More Info</a>
+    </nav>
+
+
+
+
+
 
 
     <script src= "donate.js"></script>
