@@ -27,15 +27,33 @@
     <!-- Main -->
     <main>
       <div class="container">
-        <h1>Volunteer Here</h1>
+        <h1>Sign Up to Volunteer!</h1>
         <div class="row">
           <div class="col">
             <form id="survey" action="Insert Thank You Page Here" method="post">
+
               <!-- <fieldset id="basicInfo">
                 <div class="formRow">
                   <label for="group">How many people will be volunteering? (Maximum of 10)</label>
                   <input type="number" name="group" id="group" value="1" step="1" min="1" max="10">
                 </div> -->
+
+                  <fieldset id="personalInfo">
+                    <div class="formRow">
+                      <label for="name">Name</label>
+                      <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                      <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                    </div>
+
+                  <div class="formRow">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                  </div>
+
+                  <div class="formRow">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="nnnnnnnnnn" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$n" required>
+                  </div>
 
                 <div class="formRow">
                   <label for="location">Center Location</label>
@@ -45,8 +63,13 @@
                 </div>
 
                 <div class="formRow">
-                  <label for="visit">Volunteer Date</label>
-                  <input type="date" name="date" id="date" required>
+                  <label for="visit">Start Date</label>
+                  <input type="date" name="startDate" id="startDate" required>
+                </div>
+
+                <div class="formRow">
+                  <label for="visit">End Date</label>
+                  <input type="date" name="endDate" id="endDate" required>
                 </div>
 
                 <div class="formRow">
@@ -58,17 +81,6 @@
                     <option value="job4">Option 4</option>
                   </select>
                 </div>
-
-                <div class="formRow">
-                  <label for="email">E-mail</label>
-                  <input type="email" name="email" id="email" required>
-                </div>
-
-                <div class="formRow">
-                  <label for="phone">Phone Number</label>
-                  <input type="text" name="phone" id="phone" placeholder="nnnnnnnnnn" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$n" required>
-                </div>
-
               </fieldset>
 
               <div id="buttons">
@@ -77,22 +89,7 @@
               </div>
             </form>
           </div>
-
-          <div class="col">
-            <fieldset id="personalInfo">
-              <div class="formRow">
-                <label for="name">First Name</label>
-                <input type="text" name="firstName" id="firstName" required>
-              </div>
-
-              <div class="formRow">
-                <label for="name">Last Name</label>
-                <input type="text" name="lastName" id="lastName" required>
-              </div>
-            </fieldset>
-          </div>
         </div>
-      </div>
     </main>
 
     <!-- Footer -->
