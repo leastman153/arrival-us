@@ -26,63 +26,73 @@
 
     <!-- Main -->
     <main>
-      <form id="survey" action="Insert Thank You Page Here" method="post">
-        <fieldset id="custInfo">
-          <legend>Volunteer</legend>
+      <div class="container">
+        <h1>Volunteer Here</h1>
+        <div class="row">
+          <div class="col">
+            <form id="survey" action="Insert Thank You Page Here" method="post">
+              <!-- <fieldset id="basicInfo">
+                <div class="formRow">
+                  <label for="group">How many people will be volunteering? (Maximum of 10)</label>
+                  <input type="number" name="group" id="group" value="1" step="1" min="1" max="10">
+                </div> -->
 
-          <!-- <div class="formRow">
-            <label for="name">First Name</label>
-            <input type="text" name="firstName" id="firstName" required>
+                <div class="formRow">
+                  <label for="location">Center Location</label>
+                  <select id="location" name="orderType" required>
+                    <option value="location1">Tijuana</option>
+                  </select>
+                </div>
+
+                <div class="formRow">
+                  <label for="visit">Volunteer Date</label>
+                  <input type="date" name="date" id="date" required>
+                </div>
+
+                <div class="formRow">
+                  <label for="job">Job</label>
+                  <select id="job" name="orderType" required>
+                    <option value="job1">Paralegal</option>
+                    <option value="job2">Paperwork</option>
+                    <option value="job3">Option 3</option>
+                    <option value="job4">Option 4</option>
+                  </select>
+                </div>
+
+                <div class="formRow">
+                  <label for="email">E-mail</label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="formRow">
+                  <label for="phone">Phone Number</label>
+                  <input type="text" name="phone" id="phone" placeholder="nnnnnnnnnn" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$n" required>
+                </div>
+
+              </fieldset>
+
+              <div id="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </div>
+            </form>
           </div>
 
-          <div class="formRow">
-            <label for="name">Last Name</label>
-            <input type="text" name="lastName" id="lastName" required>
-          </div> -->
+          <div class="col">
+            <fieldset id="personalInfo">
+              <div class="formRow">
+                <label for="name">First Name</label>
+                <input type="text" name="firstName" id="firstName" required>
+              </div>
 
-          <div class="formRow">
-            <label for="group">How many people will be volunteering? (Maximum of 10)</label>
-            <input type="number" name="group" id="group" value="1" step="1" min="1" max="10">
+              <div class="formRow">
+                <label for="name">Last Name</label>
+                <input type="text" name="lastName" id="lastName" required>
+              </div>
+            </fieldset>
           </div>
-
-          <div class="formRow">
-            <label for="phone">Phone Number</label>
-            <input type="text" name="phone" id="phone" placeholder="nnnnnnnnnn" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$n" required>
-          </div>
-
-          <div class="formRow">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required>
-          </div>
-
-          <div class="formRow">
-            <label for="location">Center Location</label>
-            <select id="location" name="orderType" required>
-              <option value="location1">Tijuana</option>
-            </select>
-          </div>
-
-          <div class="formRow">
-            <label for="job">Job</label>
-            <select id="job" name="orderType" required>
-              <option value="job1">Paralegal</option>
-              <option value="job2">Paperwork</option>
-              <option value="job3">Option 3</option>
-              <option value="job4">Option 4</option>
-            </select>
-          </div>
-
-          <div class="formRow">
-            <label for="visit">Volunteer Date</label>
-            <input type="date" name="date" id="date" required>
-          </div>
-
-        <div id="buttons">
-          <input type="submit" value="Submit">
-          <input type="reset" value="Reset">
         </div>
-
-      </form>
+      </div>
     </main>
 
     <!-- Footer -->

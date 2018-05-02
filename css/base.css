@@ -68,7 +68,7 @@
     display: none;
   }
 
-  /*#floatingnav {
+  #floatingnav {
     display: flex;
     flex: row nowrap;
     justify-content: space-around;
@@ -76,7 +76,7 @@
     top: 0;
     right: 0%;
     width: 50%;
-  }*/
+  }
 
   #floatingnav a {
     width: 25%;
@@ -154,4 +154,8 @@
     padding-top: 1%;
   }
 
+}
+
+div#buttons input {
+  padding: 5%;
 }
