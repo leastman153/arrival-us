@@ -1,5 +1,6 @@
 form#payment {
   margin-top: 10em;
-  color: white;
+  color: black;
   line-height: 2em;
+  background-color: white;
 }
