@@ -11,17 +11,10 @@
 /* Landing */
 /* ############# */
 
-/* ########## */
-/* Main */
-/* ########## */
-
-main {
-  margin: 5%;
-}
-
-section#landing img {
-  width: 35%;
-  padding-top: 5%;
+#landing div img {
+  display: block;
+  width: 50%;
+  margin: 5% auto;
 }
 
 div.col img{
@@ -45,4 +38,37 @@ div.col img{
 .secbreak {
   margin: 50px auto;
   background-color: rgb(230, 230, 230);
+}
+
+hr {
+  display: block;
+  margin: 0 auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+#about {
+  padding: 5%;
+}
+
+#about div {
+  width: 100%;
+}
+
+#about div:first-of-type {
+  margin-bottom: 10%;
+}
+
+/* ############# */
+/* Section */
+/* ############# */
+
+#sections {
+  display: flex;
+  flex: row nowrap;
+  padding: 5%;
+}
+
+#sections .container div {
+  margin-bottom: 10%;
 }
