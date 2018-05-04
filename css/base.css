@@ -66,7 +66,7 @@
   /* Floating Nav */
   /* ################## */
 
-  #floatingnav {
+  /*#floatingnav {
     display: none;
   }
 
@@ -95,8 +95,8 @@
   }
 
   #floatingnav a:hover {
-    width: 45%;
-    /*color: rgb(0,144,255);*/
+    width: 30%;
+    color: rgb(0,144,255);
     color: black;
     background-color: rgb(250, 250, 250);
     border-bottom: 3px solid gray;
@@ -106,13 +106,63 @@
     text-decoration: none;
   }
 
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  ul.mainmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(211, 211, 211, 0.25);
+    margin: 1%;
+  }
+
+  nav ul li a {
+    display: block;
+    float: right;
+    color: white;
+    text-align: center;
+    width: 10%;
+    transition-duration: .3s;
+    padding: 1%;
+    border-radius: 10px;
+  }
+
+  nav a:hover {
+    background-color: white;
+    color: black;
+    /*width: 12%;*/
+  }
+
+  nav a:visited, a:link {
+    text-decoration: none;
+  }
+
+  ul.submenu {
+    display: none;
+  }
+
+  nav a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+    display: block;
+  }
+
+  @media only screen and (min-width: 769px) {
+    ul.submenu {
+      display: block;
+    }
+  }
+
   /* ########## */
   /* Main */
   /* ########## */
 
   main {
     display: block;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     margin: 15% auto 5%;
     width: 90%;
     border-radius: 10px;
