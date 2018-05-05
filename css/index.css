@@ -7,42 +7,69 @@
   Filename: index.css
 */
 
-/* ############# */
-/* Landing */
-/* ############# */
+@media only screen and (min-width:300px) {
+  /* ############# */
+  /* Landing */
+  /* ############# */
 
-/* ########## */
-/* Main */
-/* ########## */
+  #landing div img {
+    display: block;
+    width: 50%;
+    margin: 5% auto;
+  }
 
-main {
-  margin: 5%;
-}
+  /* ########## */
+  /* Main */
+  /* ########## */
 
-section#landing img {
-  width: 35%;
-  padding-top: 5%;
-}
+  #headingbreak {
+    margin: 25px 0;
+    width: 50%;
+    border: inset;
+    border-width: 1px;
+    border-color: purple;
+  }
 
-div.col img{
-  width: 80%;
-  height: 90%;
-  border: ridge .5em;
-  border-radius: 2em;
-  border-color: purple;
-  position: absolute;
-  left: 50px;
-}
+  .secbreak {
+    margin: 50px auto;
+    background-color: rgb(230, 230, 230);
+  }
 
-#headingbreak {
-  margin: 25px 0;
-  width: 50%;
-  border: inset;
-  border-width: 1px;
-  border-color: purple;
-}
+  hr {
+    display: block;
+    margin: 0 auto;
+    border-style: inset;
+    border-width: 1px;
+  }
 
-.secbreak {
-  margin: 50px auto;
-  background-color: rgb(230, 230, 230);
+  #about {
+    padding: 5%;
+  }
+
+  #about div {
+    width: 100%;
+  }
+
+  #about div:first-of-type {
+    margin-bottom: 10%;
+  }
+
+  /* ############# */
+  /* Section */
+  /* ############# */
+
+  #sections {
+    display: flex;
+    flex: row nowrap;
+    padding: 5%;
+  }
+
+  #sections .container div {
+    margin-bottom: 10%;
+  }
+
+  #sections .container div a {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
