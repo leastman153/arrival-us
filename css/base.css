@@ -46,8 +46,9 @@
 
   #landing img {
     display: block;
-    width: 75%;
-    margin: 5% auto;
+    width: 50%;
+    margin: auto;
+    padding-top: 10%;
     /*width: 40%;*/
   }
 
@@ -66,43 +67,51 @@
   /* Floating Nav */
   /* ################## */
 
-  #floatingnav {
+  nav {
+    top: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10%;
+    transition-duration: .2s;
+  }
+
+  ul.submenu {
+    position: absolute;
+    width: 100%;
+  }
+
+  ul.mainmenu > li {
+    float: right;
+    position: relative;
+    width: 12%;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    overflow: visible;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  ul.submenu {
     display: none;
   }
 
-  #floatingnav {
-    display: flex;
-    flex: row nowrap;
-    justify-content: space-around;
-    position: fixed;
-    top: 0;
-    right: 0%;
-    width: 50%;
-  }
-
-  #floatingnav a {
-    width: 25%;
-    padding: 10px 0;
-    text-align: center;
+  a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+    display: block;
     color: white;
-    background: rgb(211,211,211, 95%);
-    border-bottom: 3px solid rgb(211,211,211, 95%);
-    transition: width 0.35s, color 0.5s, background-color 1s, border-bottom 1s;
   }
 
-  #floatingnav a:first-of-type {
-    border-bottom-left-radius: 10px;
-  }
-
-  #floatingnav a:hover {
-    width: 45%;
-    /*color: rgb(0,144,255);*/
+  nav a:hover {
+    background-color: white;
     color: black;
-    background-color: rgb(250, 250, 250);
-    border-bottom: 3px solid gray;
-  }
-
-  #floatingnav a:visited, a:link {
     text-decoration: none;
   }
 
@@ -112,7 +121,7 @@
 
   main {
     display: block;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 15% auto 5%;
     width: 90%;
     border-radius: 10px;
