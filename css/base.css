@@ -47,7 +47,7 @@
   #landing img {
     display: block;
     width: 50%;
-    margin: 0 auto auto;
+    margin: auto;
     padding-top: 10%;
     /*width: 40%;*/
   }
@@ -67,54 +67,11 @@
   /* Floating Nav */
   /* ################## */
 
-  /*nav {
-    position: fixed;
+  nav {
     top: 0;
-    width: 100%;
-  }
-
-  ul.mainmenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: rgba(211, 211, 211, 0.25);
-    margin: 1%;
-  }
-
-  nav ul li a {
-    display: block;
-    float: right;
-    color: white;
-    text-align: center;
-    width: 10%;
-    transition-duration: .3s;
-    padding: 1%;
-    border-radius: 10px;
-  }
-
-  nav a:hover {
-    background-color: white;
-    color: black;
-    width: 12%;
-  }
-
-  ul.submenu {
     position: absolute;
-    width: 100%;
+    z-index: 1;
   }
-
-  ul.submenu {
-    display: none;
-  }
-
-  a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
-    display: block;
-  }*/
-
-  /*nav {
-    padding-top: 1%;
-  }*/
 
   nav ul li a {
     text-decoration: none;
@@ -133,7 +90,7 @@
   ul.mainmenu > li {
     float: right;
     position: relative;
-    width: 10%;
+    width: 12%;
   }
 
   ul {
