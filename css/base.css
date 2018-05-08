@@ -60,65 +60,8 @@
   }
 
   #navicon{
-   display: none;
-  }
-
-  /* ################## */
-  /* Floating Nav */
-  /* ################## */
-
-  nav {
-    top: 0;
-    position: absolute;
-    z-index: 1;
-  }
-
-  nav ul li a {
-    text-decoration: none;
     display: block;
-    color: white;
-    text-align: center;
-    padding: 10%;
-    transition-duration: .2s;
   }
-
-  ul.submenu {
-    position: absolute;
-    width: 100%;
-  }
-
-  ul.mainmenu > li {
-    float: right;
-    position: relative;
-    width: 12%;
-  }
-
-  ul {
-    position: fixed;
-    width: 100%;
-    overflow: visible;
-    background: rgba(0, 0, 0, 0.7);
-  }
-
-  ul.submenu {
-    display: none;
-  }
-
-  a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
-    display: block;
-    color: white;
-  }
-
-  nav a:hover {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-  }
-
-  /* ########## */
-  /* Main */
-  /* ########## */
-
   main {
     display: block;
     background-color: rgba(255, 255, 255, 0.8);
@@ -165,8 +108,111 @@
     padding-top: 1%;
   }
 
-}
+
 
 div#buttons input {
   padding: 5%;
+}
+
+nav.horizontal{
+  display: none;
+}
+div#naviconcontainer{
+  display: block;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+
+}
+div#naviconcontainer img{
+  width: 150%;
+  background-color: rgba(255,255,255,.75);
+}
+div#naviconcontainer ul{
+  display: none;
+}
+#navicon{
+  display: block;
+ }
+}
+@media only screen and (min-width: 800px) {
+  div#naviconcontainer img{
+    width: 200%;
+    background-color: rgba(255,255,255,.75);
+
+  }
+  div#naviconcontainer{
+    display: block;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+
+
+
+  nav.horizontal {
+    display: block;
+  }
+
+  #naviconcontainer{
+    display: none;
+  }
+  #navicon{
+    display: none;
+  }
+
+  /* ################## */
+  /* Floating Nav */
+  /* ################## */
+
+  nav {
+    top: 0;
+    position: fixed;
+    z-index: 1;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    transition-duration: .2s;
+  }
+
+  ul.submenu {
+    position: absolute;
+    width: 100%;
+  }
+
+  ul.mainmenu > li {
+    float: right;
+    position: relative;
+    width: 12%;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    overflow: visible;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  ul.submenu {
+    display: none;
+  }
+
+  a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+    display: block;
+    color: white;
+  }
+
+  nav a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+  }
 }
