@@ -40,8 +40,28 @@
     border-radius: 10px;
   }
 
+  #naviconcontainer ul {
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    /*margin-right: 5%;*/
+    margin: 0 5%;
+    /*width: 15%;*/
+    text-align: center;
+  }
+
+  #naviconcontainer ul a {
+    display: none;
+  }
+
   #navicon {
-    width: 100%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 55px;
   }
 
   /* ################## */
@@ -105,6 +125,8 @@
   /* ############ */
 
   footer {
+    float: left;
+    clear: both;
     margin: 5% auto;
     text-align: center;
     color: white;
