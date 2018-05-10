@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../bootstrap_css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/volunteer.css">
   </head>
   <body>
 
@@ -22,9 +23,9 @@
   <nav class="horizontal">
     <ul class="mainmenu">
       <li><a href="info.html">More Info</a></li>
-      <li><a href="involved.html" class="submenuTitle">Get Involved &#9654;</a>
+      <li><a href="involved.html" class="submenuTitle active">Get Involved &#9654;</a>
         <ul class="submenu">
-          <li><a href="volunteer.html">Volunteer here</a></li>
+          <li><a href="volunteer.html" class="subactive">Volunteer here</a></li>
           <li><a href="donate.html">Donate here</a></li>
         </ul>
       </li>
@@ -62,48 +63,54 @@
                 </div> -->
 
                   <fieldset id="personalInfo">
-                    <div class="formRow">
+                    <div class="formRow" id="nameDiv">
                       <label for="name">Name</label>
                       <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
                       <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
                     </div>
 
-                  <div class="formRow">
-                    <label for="email">Email</label>
+                  <div class="formRow" id="emailDiv">
+                    <label for="email" id="emailLabel">Email</label>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                   </div>
 
                   <div class="formRow">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone" placeholder="nnnnnnnnnn" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$n" required>
+                    <label for="phone" id="phoneLabel">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="##########" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$n" required>
                   </div>
 
-                <div class="formRow">
+                  <div class="formRow">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" required>
+                  </div>
+
+                <div class="formRow" id="locationDiv">
                   <label for="location">Center Location</label>
-                  <select id="location" name="orderType" required>
+                  <select id="location" name="location" required>
                     <option value="location1">Tijuana</option>
                   </select>
                 </div>
 
-                <div class="formRow">
-                  <label for="visit">Start Date</label>
-                  <input type="date" name="startDate" id="startDate" required>
-                </div>
-
-                <div class="formRow">
-                  <label for="visit">End Date</label>
-                  <input type="date" name="endDate" id="endDate" required>
-                </div>
-
-                <div class="formRow">
+                <div class="formRow" id="jobDiv">
                   <label for="job">Job</label>
-                  <select id="job" name="orderType" required>
+                  <select id="job" name="job" required>
                     <option value="job1">Paralegal</option>
                     <option value="job2">Paperwork</option>
                     <option value="job3">Option 3</option>
                     <option value="job4">Option 4</option>
                   </select>
                 </div>
+
+                <div class="formRow" id="startDiv">
+                  <label for="visit">Start Date</label>
+                  <input type="date" name="startDate" id="startDate" required>
+                </div>
+
+                <div class="formRow" id="endDiv">
+                  <label for="visit">End Date</label>
+                  <input type="date" name="endDate" id="endDate" required>
+                </div>
+
               </fieldset>
 
               <div id="buttons">
