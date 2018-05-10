@@ -1,0 +1,48 @@
+main {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+input, label {
+  display: block;
+}
+
+input#firstName, input#lastName {
+  display: inline-block;
+  width: 250px;
+}
+
+input#email {
+  width: 250px;
+}
+
+div#emailDiv {
+  float: left;
+  margin-right: 3%;
+}
+
+div#phoneDiv {
+  float: left;
+}
+
+div#locationDiv {
+  float: left;
+  margin-right: 3%;
+}
+
+div#startDiv {
+  float: left;
+  margin-right: 3%;
+}
+
+div#endDiv {
+  float: left;
+}
+
+div {
+  margin-top: 2%;
+}
+
+div#buttons input {
+  float: left;
+}
