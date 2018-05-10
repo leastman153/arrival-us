@@ -1,0 +1,458 @@
+[33mcommit 9d3600c3d9b4f45d0622e7216e18f5cf6320b5f2[m[33m ([m[1;36mHEAD -> [m[1;32mtesting[m[33m)[m
+Merge: 9f9a4a0 19bcfed
+Author: Lucas Eastman <lucas546alexander@gmail.com>
+Date:   Wed May 9 22:34:49 2018 -0700
+
+    Merge branch 'lucas' into testing
+
+[33mcommit 19bcfedd30736de6b5400df3d5c6801f97d59c32[m[33m ([m[1;31morigin/lucas[m[33m, [m[1;32mlucas[m[33m)[m
+Author: Unknown <lucas546alexander@gmail.com>
+Date:   Wed May 9 22:32:08 2018 -0700
+
+    Meant to be in second to last commit; Create navicon.js;
+    
+    Was meant to be in second to last commit, as it was used in a script element in the head of index.html; Created navicon.js; Added event handler for #mobnavcontain inside of document ready event handler to move the element onto the page along with all of its content;
+
+[33mcommit f407a85a2766a63a22af37ed9a528b2e9d4d7c9e[m
+Author: Unknown <lucas546alexander@gmail.com>
+Date:   Wed May 9 22:25:35 2018 -0700
+
+    Meant to be in last commit; Added jQuery file;
+    
+    Meant to go with last commit, as it the file added in this commit was used in a script element in the head of index.html, but was not staged when the commit was made, because I didn't realize it should have been with that commit, as it was needed;
+
+[33mcommit 47889e02b0e291e265beb37e43a94e512d6ff331[m
+Author: Unknown <lucas546alexander@gmail.com>
+Date:   Wed May 9 22:23:58 2018 -0700
+
+    Linked js files; Added / moved elements; Altered / moved styles;
+    
+    Linked navicon.js and jquery.min.js to the index; Added elements for mobile nav; Moved elements in index, such as those in the navigation section and links; Altered styles for navigation for both desktop and mobile versions of the website; Moved style rules in all mobile queries about the file into the correct positions, especially style rules for navigation; Commented out popper.min.js from bootstrap_js folder;
+
+[33mcommit 9f9a4a02a455f44e4802e736004b32e7f1075c33[m
+Merge: 63ca5b1 bca24a2
+Author: Lucas Eastman <lucas546alexander@gmail.com>
+Date:   Wed May 9 19:58:59 2018 -0700
+
+    Merge branch 'dylan' into testing
+
+[33mcommit bca24a2e36bfa19e72246a64ac7ac2b9d15e83d7[m[33m ([m[1;31morigin/dylan[m[33m, [m[1;32mdylan[m[33m)[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Wed May 9 15:29:05 2018 -0700
+
+    Added social to footer
+    
+    Added social buttons to the footer using bootstrap and anchors.
+
+[33mcommit e6eb69adb398cd92e47f268d9a55270b8d5da9a3[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Wed May 9 14:51:08 2018 -0700
+
+    Images
+    
+    Added images to the help page and the images file. I styled the images with simple  bootstrap. Added very simple text just to outline the sections.
+
+[33mcommit b3eb0c029a1dcc23c2135c68d1d3f0fb00408929[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Wed May 9 13:27:21 2018 -0700
+
+    Fixed Carousel
+    
+    I fixed the carousel so you could click it and it would change.
+
+[33mcommit 05dcfb6a57c32b012262c239564fbbaeb24b0465[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Tue May 8 15:32:10 2018 -0700
+
+    Carousel, navicon, base.
+    
+    I added a carousel along with basic styles for it. Added base styles for a responsive nav. Added the navicon to all the HTMLs.
+
+[33mcommit f24f65bcc1c0ae052ef064d0186d10c21f7845bb[m
+Merge: 63ca5b1 d163982
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Tue May 8 13:55:52 2018 -0700
+
+    Merge branch 'chat' into testing
+
+[33mcommit d16398262b372c3c653cfb6bcf84923b0daf166e[m[33m ([m[1;31morigin/chat[m[33m, [m[1;32mchat[m[33m)[m
+Merge: 80c355f 050955b
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Tue May 8 13:41:54 2018 -0700
+
+    Removed Nav
+
+[33mcommit 80c355fb97a6eeed21d40191787bbecd46875fc4[m
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Tue May 8 13:39:01 2018 -0700
+
+    Fixed Navigation Issues
+    
+    Set nav to a absolute position, added a z-index of 1 to prevent the form from appearing on top of the nav.
+
+[33mcommit 4d97a0da8fb4732cc1a9b24edac41d5b954b662f[m
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Mon May 7 15:28:08 2018 -0700
+
+    Adjusted nav, added submenus
+    
+    Added new styles, added submenus
+
+[33mcommit 050955b7a83d0a4193ececf059a8d92ff2475c8b[m
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Fri May 4 15:26:13 2018 -0700
+
+    Auto stash before merge of "base" and "origin/base"
+
+[33mcommit 63ca5b168240ab57bbee4d6841e01a898a53cfb1[m[33m ([m[1;31morigin/testing[m[33m)[m
+Merge: 368f973 f71cad5
+Author: LEastman153 <31224634+leastman153@users.noreply.github.com>
+Date:   Thu May 3 13:43:13 2018 -0700
+
+    Merge pull request #4 from leastman153/base
+    
+    Base
+
+[33mcommit f71cad5c57bd6a5b1943a9d72b78e8a56aee62ce[m
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Wed May 2 15:24:33 2018 -0700
+
+    Added new logo, modified volunteer page
+    
+    Added extra content to the volunteer page, added new logo
+
+[33mcommit 1760e8f4ce53684b1a07ad201a6a75242697d488[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Wed May 2 15:15:27 2018 -0700
+
+    Added images, changed base background
+    
+    I added images to the image file and changed the base background.
+
+[33mcommit abaad37b91592944fd618206b11ca93d8319a778[m
+Merge: c5aaf4f 012d4c2
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Wed May 2 14:14:13 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit c5aaf4fecdbfc2006aabda07e296aa616d8dcdcd[m
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Wed May 2 14:14:09 2018 -0700
+
+    Adjusted styles, added some information
+    
+    Adjusted spacing for the main and the landing image. Uncommented the floating nav. Made buttons bigger.  Added in some information for the home page.
+
+[33mcommit 012d4c2a53d039f4f9745cb75cafe370fa0107d0[m
+Merge: 3bc9a63 9d42dbd
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Wed May 2 14:10:33 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit 3bc9a63b0e8aef55694991192a8f42387701aea5[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Wed May 2 14:10:27 2018 -0700
+
+    Donate form
+    
+    Finished the donate form and added very basic css styles to it.
+
+[33mcommit 9d42dbd67499f4bdeb0a573f72ab1ffebff32954[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Tue May 1 15:30:19 2018 -0700
+
+    Moved all styles into media query; Added style rules;
+    
+    Moved styles from index.css and elsewhere outside of the media query into the media query; Added base style rules;
+
+[33mcommit aefe1c774fccb843d2c0bd2824d502ffca510982[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Tue May 1 15:29:12 2018 -0700
+
+    Removed styles
+    
+    Removed styles meant to be in base.css
+
+[33mcommit 5e93c97e221d93738c8c245d7afda5e00ec02d72[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Tue May 1 15:28:48 2018 -0700
+
+    Added bootstrap styling
+    
+    Added bootstrap styling to "Learn More" button in about section
+
+[33mcommit a4d5f144412163e1f17d5a0ecbbace695755bffd[m
+Merge: 68993df ec0cf90
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Tue May 1 15:27:46 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit 68993df6b1ff3aff5bbd121a97350753792b9867[m
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Tue May 1 15:27:40 2018 -0700
+
+    Added Volunteer Page
+    
+    Added volunteer page with a simple form (incomplete).
+
+[33mcommit ec0cf9068624b9422b407509eff45d0c297c129a[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Tue May 1 15:27:13 2018 -0700
+
+    Made my form page.
+    
+    I made the HTML for the form page.
+
+[33mcommit 4c28a01560108ca1b2296d37bea0265b6375f404[m
+Merge: da7e2df 013cca3
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Tue May 1 14:09:41 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit 013cca3a039dfa9b79c85c60d4a789aa751f5751[m
+Merge: 780a2f8 55b2bdc
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Mon Apr 30 15:30:28 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit 780a2f875b93f372c1268ce079756a3ba33daa4b[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Mon Apr 30 15:30:25 2018 -0700
+
+    Restructured part of index main; Altered mobile media query;
+    
+    Restructured about section of index main to be ready for responsive design; Altered mobile media query to format the about section more efficiently;
+
+[33mcommit 55b2bdcdb80a08aa1972c7bcd4e1be2c8bddb547[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Mon Apr 30 15:28:44 2018 -0700
+
+    Added a file and js script
+    
+    Added a folder and js file. Added a link to get to my donate website.
+
+[33mcommit 892dbf40a14d4fb0d3760f6e276557035fcd37ac[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Mon Apr 30 15:09:01 2018 -0700
+
+    Auto stash before merge of "base" and "origin/base"
+    
+    Removed main styles from index.css; Altered styles in base.css; Made whitespace changes, added comment marking the logo in index, and added the alt "logo" to the img in the landing in the index;
+
+[33mcommit f6a0af4e289049e3e5aa77f2af538aab593f0f30[m
+Merge: 2410840 734e095
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Mon Apr 30 15:06:23 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit 241084036b664ce8540844672abe6d2a898104f8[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Mon Apr 30 15:04:32 2018 -0700
+
+    Auto stash before merge of "base" and "origin/base"
+    
+    Added image(won't be used); added mobile styles for nav.
+
+[33mcommit da7e2df38d588fb506663705c84a53f940e06558[m
+Merge: d13deb0 734e095
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Mon Apr 30 13:56:41 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit 734e095bdf128a004875e3c8d4c101c496e67117[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Mon Apr 30 13:52:42 2018 -0700
+
+    Added mobile media query
+    
+    Added media query for devices with a screen width under 361px
+
+[33mcommit d13deb0ed8e9b4397a363e1b23ea7a08d74fc8fb[m
+Merge: f7203df 09519b3
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Mon Apr 30 13:47:37 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit 09519b3b4ff0c468a63916c3a1d8ea2644773246[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Mon Apr 30 13:47:19 2018 -0700
+
+    Changed index styles
+    
+    Removed indent from all p elements in .col div elements
+
+[33mcommit f7203df46bfe9f36d9194228ac5967d06554f4ce[m
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Mon Apr 30 13:45:16 2018 -0700
+
+    Auto stash before merge of "base" and "origin/base"
+
+[33mcommit 60cf8d116f2206e00717be9e724c1b6fe05cbb97[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Mon Apr 30 13:43:29 2018 -0700
+
+    Applied floating nav to all html pages; Changed main margin in base.css;
+    
+    Applied floating nav in index to all other HTML pages with the correct ID in the correct position, and removed nav in header; Changed main element's margin from 10% to 15% in base.css;
+
+[33mcommit 368f973ecd5bfa5ed18830c0647da24751c42dad[m
+Author: Unknown <lucas546alexander@gmail.com>
+Date:   Sat Apr 28 16:59:39 2018 -0700
+
+    Separated style rules for index from base; Altered index style rules;
+    
+    Moved all style rules specifically for the index from base.css into index.css; Made changes to styles for index in index.css after moving them from base.css to index.css;
+
+[33mcommit 518ec0e0728f9ae8d6ce65a11dc9b003e75283ac[m
+Merge: a81bfcf 60820e6
+Author: LEastman153 <31224634+leastman153@users.noreply.github.com>
+Date:   Sat Apr 28 16:37:36 2018 -0700
+
+    Merge pull request #3 from leastman153/base
+    
+    Base
+
+[33mcommit 60820e636ee1e8f7f625bea579d7f0b0b0af9a9d[m
+Merge: c49c6cb 0bd44ab
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Fri Apr 27 15:26:07 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit c49c6cbfecfc9366dac9d8d0e578dc007852de87[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Fri Apr 27 15:25:15 2018 -0700
+
+    Altered header; Created a floating nav;
+    
+    Removed header background color and moved the header image to the left side of the header using base.css; Removed nav from header and added it to the bottom of the page to make it a floating nav using base.css, with new style rules putting it on the right side of the top of the page, and new hover styles;
+
+[33mcommit 0bd44abbe038e7c798a8fe4e455f397de7df7aa7[m
+Merge: d6b5d2a d78b93f
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Fri Apr 27 15:21:02 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit d6b5d2a6ffe0f1d07fca8aaf9168e11a2c7caf51[m
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Fri Apr 27 15:20:57 2018 -0700
+
+    Added line and changed spacing
+    
+    Added a line to seperate sections, changed the spacing so the main has more space.
+
+[33mcommit d78b93f3d7d212ccf3cb2a5ff906e06444dd3e68[m
+Merge: 145eac8 3194c2e
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Fri Apr 27 15:19:43 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit 145eac869859055f89fd9533a4e08fe69b508d48[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Fri Apr 27 15:19:38 2018 -0700
+
+    Auto stash before merge of "base" and "origin/base"
+    
+    Added image, added styles to image, styled the paragraphs.
+
+[33mcommit 3194c2e19419aadf3dffd6c91c7a1d6043bb52a1[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Fri Apr 27 14:45:41 2018 -0700
+
+    Sectioned out base.css
+    
+    Sectioned out style rules based on what is being affected in base.css
+
+[33mcommit 68a9cfa4d541d5588954cc4eff79ceec769d4517[m
+Merge: 658ff91 eb2c4c3
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Fri Apr 27 14:40:00 2018 -0700
+
+    Merge remote-tracking branch 'origin/base' into base
+
+[33mcommit 658ff9170507e3eb5824800e5069160c9a1ad680[m
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Fri Apr 27 14:39:41 2018 -0700
+
+    Changed Styles
+    
+    Added a 85% width to the main element. Added margins and padding. Changed footer colors. Added rounded corners. Added logo to landing page.
+
+[33mcommit eb2c4c3eb82cf3fa6a3b45acc1a0bc751e5fc00e[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Fri Apr 27 14:35:20 2018 -0700
+
+    Changed the landing section styles
+    
+    Changed the styles for the properties in the landing section.
+
+[33mcommit a81bfcf25a864f89960a86c9b874173685549639[m
+Merge: a412b59 fe6058f
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Fri Apr 27 13:47:32 2018 -0700
+
+    Merge branch 'wireframe'
+
+[33mcommit fe6058f607b6805ae5b2059cf29edef0deb0d1dd[m[33m ([m[1;31morigin/wireframe[m[33m)[m
+Merge: aedc33f c47a0cf
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Fri Apr 27 13:46:57 2018 -0700
+
+    Merge remote-tracking branch 'origin/wireframe' into wireframe
+
+[33mcommit aedc33f540835103af6b2d542abf4e092d0cee11[m
+Author: Charley Tran <ctran049@west-mec.org>
+Date:   Fri Apr 27 13:46:47 2018 -0700
+
+    Added footer to every page
+    
+    Added footers
+
+[33mcommit c47a0cfc1d3e1a67ba9f5d05a21228a7d84c4caa[m
+Merge: de8f4f0 7152384
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Fri Apr 27 13:46:45 2018 -0700
+
+    Merge remote-tracking branch 'origin/wireframe' into wireframe
+
+[33mcommit de8f4f06cd9724e5345869c10bf864e3f35ac16e[m
+Author: Dylan <DMiller437@west-mec.org>
+Date:   Fri Apr 27 13:46:40 2018 -0700
+
+    commented out gradient, changed nav
+    
+    Made the nav look cleaner, commented out the gradient
+
+[33mcommit 7152384996e649d8efbbdb1774c92d77898968e0[m
+Author: LEastman153 <leastman153@west-mec.org>
+Date:   Fri Apr 27 13:44:56 2018 -0700
+
+    Outlined basic content
+    
+    Outlined structure for laying out basic content in help.html involved.html
+
+[33mcommit a412b597bab4c8145d388aad71db4d53b7891a63[m
+Author: LEastman153 <31224634+leastman153@users.noreply.github.com>
+Date:   Thu Apr 26 19:48:52 2018 -0700
+
+    Updated CNAME
+    
+    Replaced "arivalus.cf/html/index.html" with "arrivalus.cf"
+
+[33mcommit 827b5f4ce7854262380fd25ac94de45b53f31dbd[m
+Author: LEastman153 <31224634+leastman153@users.noreply.github.com>
+Date:   Thu Apr 26 19:43:27 2018 -0700
+
+    Updated CNAME
+    
+    Changed arrivalus.cf to arrivalus.cf/html/index.html
