@@ -15,15 +15,6 @@
 /* Main */
 /* ########## */
 
-main {
-  margin: 5%;
-}
-
-section#landing img {
-  width: 35%;
-  padding-top: 5%;
-}
-
 div.col img{
   width: 80%;
   height: 90%;
@@ -34,7 +25,17 @@ div.col img{
   left: 50px;
 }
 
-#headingbreak {
+p#one {
+  float: left;
+  width: 45%;
+}
+
+div img#image {
+  width: 50%;
+  float: right;
+}
+
+/*#headingbreak {
   margin: 25px 0;
   width: 50%;
   border: inset;
@@ -45,4 +46,4 @@ div.col img{
 .secbreak {
   margin: 50px auto;
   background-color: rgb(230, 230, 230);
-}
+}*/
