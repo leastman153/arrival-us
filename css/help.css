@@ -156,7 +156,7 @@
   }
 
   #introimgcol img {
-    border: 10px inset #e27373;
+    border: 10px inset #FFFFFF;
     border-radius: 10px;
   }
 
@@ -177,7 +177,7 @@
 
   #servicesrow div img {
     /* border: 10px groove rgb(175, 225, 256, 0.5); */
-    border: 10px inset #689ff9;
+    border: 10px inset #FFFFFF;
   }
 
   #servicesrow div h3 {
