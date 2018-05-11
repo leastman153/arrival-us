@@ -178,9 +178,11 @@
   /* ############ */
 
   footer {
-    margin: 5%;
+    display: block;
     text-align: center;
     color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1%;
   }
 
   section#copyright {
@@ -188,7 +190,7 @@
   }
 
   div#buttons input {
-    padding: 5%;
+    padding: 1%;
   }
 }
 
@@ -229,7 +231,7 @@
     display: block;
     color: white;
     text-align: center;
-    padding: 5%;
+    padding: 10%;
     transition-duration: .2s;
   }
 
@@ -264,6 +266,15 @@
     background-color: white;
     color: black;
     text-decoration: none;
+  }
+
+  .active {
+    background-color: gray;
+  }
+
+  .subactive {
+    background-color: darkgray;
+    color: black;
   }
 
   /* ############# */
