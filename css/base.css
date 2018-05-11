@@ -182,8 +182,8 @@
     display: block;
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 0;
   }
 
   section#copyright {
