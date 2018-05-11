@@ -1,3 +1,16 @@
+@media only screen and (max-width:768px) {
+  #myCarousel {
+    display: none;
+  }
+  hr.info{
+    display: none;
+  }
+  img{
+    display: none;
+  }
+}
+
+
 @media only screen and (min-width: 768px) {
   .img-responsive,
   .thumbnail>img,
