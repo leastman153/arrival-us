@@ -1,15 +1,24 @@
-@media only screen and (max-width:768px) {
-  #myCarousel {
+@media only screen and (max-width: 767px) {
+  #myCarousel, img {
     display: none;
   }
+
   hr.info{
     display: none;
   }
-  img{
-    display: none;
+
+  #servicesrow div {
+    margin-bottom: 25px;
+  }
+
+  #servicesrow div h3 {
+    text-decoration: underline;
+  }
+
+  #servicesrow div a {
+    width: 100%;
   }
 }
-
 
 @media only screen and (min-width: 768px) {
   .img-responsive,
