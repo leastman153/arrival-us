@@ -61,51 +61,45 @@
 
     <!-- Main -->
     <main>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img class="img-fluid" src="../images/Charity_1.JPG" alt="Pic 1">
-    </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img class="img-fluid" src="../images/Charity_1.JPG" alt="Pic 1">
+          </div>
+          <div class="item">
+            <img class= "img-fluid" src="../images/charity_2.jpeg" alt="Pic 2">
+          </div>
+          <div class="item">
+            <img class="img-fluid" src="../images/charity_3.jpeg" alt="Pic 3">
+          </div>
+        </div>
 
-    <div class="item">
-      <img class= "img-fluid" src="../images/charity_2.jpeg" alt="Pic 2">
-    </div>
-
-    <div class="item">
-      <img class="img-fluid" src="../images/charity_3.jpeg" alt="Pic 3">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-
-
-
-
-
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
 
       <!-- Intro -->
-      <section class="container">
+      <section id="intro" class="container">
 
         <!-- Row -->
-        <div class="row">
+        <div id="introrow">
 
           <!-- Column 1 -->
-          <div class="col">
+          <div>
+
             <!-- Heading -->
             <h1>Why choose us?</h1>
 
@@ -113,26 +107,25 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
 
-
-
           <!-- Column 2 -->
-          <div class="col" id="col-1">
+          <div id="introimgcol">
+
             <!-- Icon -->
             <img class="img-fluid" src="../images/business.jpeg" alt="icon-1">
           </div>
         </div>
       </section>
 
-      <hr class= "secbreak">
+      <hr class="secbreak">
 
       <!-- Services -->
-      <section class="container">
+      <section id="services" class="container">
 
         <!-- Row -->
-        <div>
+        <div id="servicesrow">
 
           <!-- Column 1 -->
-          <div id="col-2">
+          <div>
 
             <!-- Icon -->
             <img class="img-fluid" src="../images/personal.jpeg" alt="icon-2">
@@ -140,15 +133,17 @@
             <!-- Header -->
             <h3>Personal Experience</h3>
 
+            <hr>
+
             <!-- Info -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
             <!-- Learn More Button -->
-            <a href="#">Learn More</a>
+            <a href="#" class="btn btn-outline-dark">Learn More</a>
           </div>
 
           <!-- Column 2 -->
-          <div id="col-3">
+          <div>
 
             <!-- Icon -->
             <img class="img-fluid" src="../images/york.jpeg" alt="icon-3">
@@ -156,15 +151,17 @@
             <!-- Header -->
             <h3>Why</h3>
 
+            <hr>
+
             <!-- Info -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
             <!-- Learn More Button -->
-            <a href="#">Learn More</a>
+            <a href="#" class="btn btn-outline-dark">Learn More</a>
           </div>
 
           <!-- Column 3 -->
-          <div  id="col-4">
+          <div>
 
             <!-- Icon -->
             <img class="img-fluid" src="../images/team.jpeg" alt="icon-4">
@@ -172,16 +169,16 @@
             <!-- Header -->
             <h3>As a team</h3>
 
+            <hr>
+
             <!-- Info -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
             <!-- Learn More Button -->
-            <a href="#">Learn More</a>
+            <a href="#" class="btn btn-outline-dark">Learn More</a>
           </div>
-
         </div>
       </section>
-
     </main>
 
     <!-- Footer -->
@@ -203,9 +200,7 @@
         <a><i class="fa fa-facebook-f" style="font-size:48px;color:rgba(255,255,255,0.5)"></i></a>
         <a><i class="fa fa-twitter" style="font-size:48px;color:rgba(255,255,255,0.5)"></i></a>
         <a><i class="fa fa-instagram" style="font-size:48px;color:rgba(255,255,255,0.5)"></i></a>
-
       </section>
-
     </footer>
 
     <!-- <script src="js/jquery.slim.min.js"></script> -->
