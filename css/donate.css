@@ -1,6 +1,60 @@
-form#payment {
+/*form#payment {
   margin-top: 10em;
   color: black;
   line-height: 2em;
   background-color: white;
+}*/
+
+main {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+input, label {
+  display: block;
+}
+
+div {
+  margin-top: 2%;
+}
+
+div#buttons input {
+  float: left;
+}
+
+input#firstName, input#lastName {
+  display: inline-block;
+  width: 250px;
+}
+
+input#street, input#city, input#state {
+  width: 200px;
+}
+
+input#number {
+  width: 200px;
+}
+
+input#cardCVC {
+  width: 50px;
+}
+
+div#streetDiv {
+  float: left;
+  margin-right: 2%;
+}
+
+div#stateDiv {
+  float: left;
+  margin-right: 2%;
+}
+
+div#creditDiv {
+  float: left;
+  margin-right: 2%;
+}
+
+div#typeDiv {
+  float: left;
+  margin-right: 2%;
 }

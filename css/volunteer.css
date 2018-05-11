@@ -7,6 +7,10 @@ input, label {
   display: block;
 }
 
+input {
+  /*height: 40px;*/
+}
+
 input#firstName, input#lastName {
   display: inline-block;
   width: 250px;
@@ -18,7 +22,7 @@ input#email {
 
 div#emailDiv {
   float: left;
-  margin-right: 3%;
+  margin-right: 2%;
 }
 
 div#phoneDiv {
@@ -27,12 +31,12 @@ div#phoneDiv {
 
 div#locationDiv {
   float: left;
-  margin-right: 3%;
+  margin-right: 2%;
 }
 
 div#startDiv {
   float: left;
-  margin-right: 3%;
+  margin-right: 2%;
 }
 
 div#endDiv {
