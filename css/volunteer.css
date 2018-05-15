@@ -11,6 +11,10 @@ div {
   margin-top: 2%;
 }
 
+div.row {
+  margin: 0;
+}
+
 div#buttons input {
   float: left;
 }
@@ -52,7 +56,7 @@ div#buttons input {
 }
 
 @media only screen and (min-width:300px) {
-  input#buttons {
-    margin-bottom: 1%;
+  #buttons {
+    margin-bottom: 10%;
   }
 }
