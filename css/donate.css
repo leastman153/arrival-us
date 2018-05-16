@@ -24,6 +24,7 @@ div.row {
 
 div#buttons input {
   float: left;
+  margin-left: 1%;
 }
 
 @media only screen and (min-width:1200px) {
