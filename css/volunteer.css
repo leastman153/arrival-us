@@ -7,46 +7,56 @@ input, label {
   display: block;
 }
 
-input {
-  /*height: 40px;*/
-}
-
-input#firstName, input#lastName {
-  display: inline-block;
-  width: 250px;
-}
-
-input#email {
-  width: 250px;
-}
-
-div#emailDiv {
-  float: left;
-  margin-right: 2%;
-}
-
-div#phoneDiv {
-  float: left;
-}
-
-div#locationDiv {
-  float: left;
-  margin-right: 2%;
-}
-
-div#startDiv {
-  float: left;
-  margin-right: 2%;
-}
-
-div#endDiv {
-  float: left;
-}
-
 div {
   margin-top: 2%;
 }
 
+div.row {
+  margin: 0;
+}
+
 div#buttons input {
   float: left;
+}
+
+@media only screen and (min-width:1200px) {
+
+  input#firstName, input#lastName {
+    display: inline-block;
+    width: 250px;
+  }
+
+  input#email {
+    width: 250px;
+  }
+
+  div#emailDiv {
+    float: left;
+    margin-right: 2%;
+  }
+
+  div#phoneDiv {
+    float: left;
+  }
+
+  div#locationDiv {
+    float: left;
+    margin-right: 2%;
+  }
+
+  div#startDiv {
+    float: left;
+    margin-right: 2%;
+  }
+
+  div#endDiv {
+    float: left;
+  }
+
+}
+
+@media only screen and (min-width:300px) {
+  #buttons {
+    margin-bottom: 10%;
+  }
 }

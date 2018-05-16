@@ -109,15 +109,14 @@
   /* ############ */
 
   header {
-    display: none;
+    display: block;
   }
 
   header img {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    display: block;
     width: 15%;
-    length: 15%;
+    margin-top: 6%;
+    margin-left: 5%;
   }
 
   /* ############# */
@@ -152,7 +151,10 @@
   main {
     display: block;
     background-color: rgba(255, 255, 255, 0.8);
-    margin: 15% auto 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5%;
     width: 90%;
     border-radius: 10px;
@@ -244,7 +246,7 @@
   ul.mainmenu > li {
     float: right;
     position: relative;
-    width: 12%;
+    width: 13.51%;
   }
 
   ul {
