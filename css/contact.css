@@ -20,6 +20,10 @@ div#buttons input {
   margin-left: 1%;
 }
 
+main div#contact {
+  text-align: center;
+}
+
 @media only screen and (min-width:1200px) {
 
   input#firstName, input#lastName {
@@ -40,18 +44,9 @@ div#buttons input {
     float: left;
   }
 
-  div#locationDiv {
+  div#contact {
     float: left;
     margin-right: 2%;
-  }
-
-  div#startDiv {
-    float: left;
-    margin-right: 2%;
-  }
-
-  div#endDiv {
-    float: left;
   }
 
 }

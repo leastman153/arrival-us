@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="../bootstrap_css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>
@@ -83,10 +84,48 @@
 
   <!-- Main -->
   <main>
-    <section>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </section>
+    <div class="row">
+      <div class="col" id="contact">
+        <h5>Address</h5>
+        <p>Nueva Aurora, 20631 Tijuana, B.C., Mexico</p>
+        <div>
+          <div class="col">
+            <h5>Phone</h5>
+            <p>55 5787-1948</p>
+          </div>
+          <div class="col">
+            <h5>Email</h5>
+            <p>arrivalusbusiness@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <form class="" action="index.html" method="post">
+
+          <div class="formRow" id="nameDiv">
+            <label for="name">Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+          </div>
+
+          <div class="formRow" id="emailDiv">
+            <label for="email" id="emailLabel">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+          </div>
+
+          <div class="formRow">
+            <label for="phone" id="phoneLabel">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="##########" pattern="^\d{10}$|^(\(\d{3}\s*)?\d{3}[\s-]?\d{4}$n" required>
+          </div>
+
+          <div class="formRow">
+            <label for="contact">Contact Us</label>
+            <textarea name="contact" id="contact" rows="3" cols="60"></textarea>
+          </div>
+
+        </form>
+      </div>
+    </div>
 
   </main>
 
@@ -107,6 +146,7 @@
               <p>arrivalusbusiness@gmail.com</p>
             </div>
           </div>
+        </div>
     </section>
     <section id="copyright">
       <p>© Arrival U.S. 2018</p>
