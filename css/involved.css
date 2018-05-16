@@ -11,11 +11,11 @@ section:first-of-type {
   text-align: center;
 }
 
-#volanddon div.btn-wrap {
+/*#volanddon div.btn-wrap {
   width: 100%;
   padding: 0;
   border: 1px solid black;
-}
+}*/
 
 #volanddon div.btn-wrap a {
   line-height: 100%;
