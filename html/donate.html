@@ -117,9 +117,10 @@
           <div class="formRow" id="typeDiv">
             <label for="cardType">Credit Card Type</label>
             <select id="type" name="cardType">
+                <option value="discover">Select</option>
                 <option value="discover">Discover</option>
                 <option value="mastercard">Mastercard</option>
-                <option value="visa" selected>Visa</option>
+                <option value="visa">Visa</option>
                 <<option value="americanExpress"> American Express</option>
               </select>
           </div>
@@ -153,18 +154,21 @@
              </select>
           </div>
 
+        <div class="formRow" id="amountDiv">
+
+
           <label for="amount">How Much do you want to donate?</label>
-          <input type="text" name="dAmount" id="donate" list="amount">
-          <datalist id="amount" name="dAmount" size="5">
-              <option value="$5"></option>
-              <option value="$10"></option>
-              <option value="$20"></option>
-              <option value="$50"></option>
-              <option value="$100"></option>
+            <select id="amount" name="dAmount">
+              <option value="select">Select</option>
+              <option value="$5">$5</option>
+              <option value="$10">$10</option>
+              <option value="$20">$20</option>
+              <option value="$50">$50</option>
+              <option value="$100">$100</option>
+            </select>
+        </div>
 
-            </datalist>
-
-          </fieldset>
+        </fieldset>
 
         </div>
       </div>
