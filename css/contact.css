@@ -15,6 +15,10 @@ div.row {
   margin: 0;
 }
 
+main p {
+  font-size: 25px;
+}
+
 div#buttons input {
   float: left;
   margin-left: 1%;
