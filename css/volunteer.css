@@ -1,3 +1,12 @@
+/*
+  Arrival U.S. Website
+
+  Authors: Lucas Eastman, Dylan Jones-Miller, Charley Tran
+  Date: 4.25.18
+
+  Filename: volunteer.css
+*/
+
 main {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -21,39 +30,31 @@ div#buttons input {
 }
 
 @media only screen and (min-width:1200px) {
-
   input#firstName, input#lastName {
     display: inline-block;
     width: 250px;
   }
-
   input#email {
     width: 250px;
   }
-
   div#emailDiv {
     float: left;
     margin-right: 2%;
   }
-
   div#phoneDiv {
     float: left;
   }
-
   div#locationDiv {
     float: left;
     margin-right: 2%;
   }
-
   div#startDiv {
     float: left;
     margin-right: 2%;
   }
-
   div#endDiv {
     float: left;
   }
-
 }
 
 @media only screen and (min-width:300px) {
