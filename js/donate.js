@@ -41,7 +41,7 @@ function validate() {
     zip.setCustomValidity("");
   }
   var cardNum = document.getElementById("cardNum");
-  if(cardNum.validity.valueMissing || cardNum.validity.patternMismatch) {
+  if(cardNum.validity.valueMissing || cardNum.validity.patternMismatch || luhn(cardNum.value) == false) {
     cardNum.setCustomValidity("Please enter your card number as it appears on your card.");
   } else {
     cardNum.setCustomValidity("");
@@ -76,4 +76,29 @@ function validate() {
   } else {
     amount.setCustomValidity("");
   }
+}
+
+function sumDigits(numStr) {
+    var digitTotal = 0;
+    for (var i = 0; i < numStr.length; i++) {
+        digitTotal += parseInt(numStr.charAt(i));
+    }
+    return digitTotal;
+}
+
+function luhn(idNum) {
+    var string1 = "";
+    var string2 = "";
+
+    // Retrieve the odd numbered digits
+    for (var i = idNum.length - 1; i >= 0; i -= 2) {
+        string1 += idNum.charAt(i);
+    }
+    // Retrieve the even numbered digits and double them
+    for (var i = idNum.length - 2; i >= 0; i -= 2) {
+        string2 += 2 * idNum.charAt(i);
+    }
+
+    // Return whether the sume of the digits is divisible by 10
+    return sumDigits(string1 + string2) % 10 === 0;
 }

@@ -76,18 +76,18 @@
 
               <div class="formRow" id="nameDiv">
                 <label for="name">Name</label>
-                <input type="text" name="firstName" id="firstName" placeholder="First Name" oninput="validate()" pattern="^[a-zA-Z0-9]{2,100}" required>
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name" oninput="validate()" pattern="^[a-zA-Z0-9]{2,100}" required>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" oninput="validate()" pattern="^[a-zA-Z0-9]{2}.*$" required autofocus>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" oninput="validate()" pattern="^[a-zA-Z0-9]{2}.*$" required>
               </div>
 
               <div class="formRow" id="streetDiv">
                 <label for="street">Street</label>
-                <input type="text" name="donateStreet" id="street" placeholder="Street Address" oninput="validate()" pattern="^[a-zA-Z0-9]{2,100}" required>
+                <input type="text" name="donateStreet" id="street" placeholder="Street Address" oninput="validate()" pattern="^[a-zA-Z0-9]{2}.*$" required>
               </div>
 
               <div class="formRow" id="cityDiv">
                 <label for="city">City</label>
-                <input type="city" name="donateCity" id="city" placeholder="City" oninput="validate()" pattern="^[a-zA-Z0-9]{2,100}" required>
+                <input type="city" name="donateCity" id="city" placeholder="City" oninput="validate()" pattern="^[a-zA-Z0-9]{2}.*$" required>
               </div>
 
               <div class="formRow" id="stateDiv">
