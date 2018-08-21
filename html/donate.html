@@ -69,9 +69,10 @@
   <main>
     <div class="container">
       <h1>Donator Information</h1>
+      <div id="errorMsg"><strong>Please enter all information.</strong></div>
       <div class="row">
         <div class="col">
-          <form id="payment" action="thankyou.html" method="post">
+          <form id="payment" action="thankyou.html" method="post" novalidate="novalidate">
             <fieldset id="donateInfo">
 
               <div class="formRow" id="nameDiv">
@@ -206,18 +207,25 @@
           </div>
 
         <div class="formRow" id="amountDiv">
-
-
           <label for="amount">How Much do you want to donate?</label>
-            $
-            <select id="amount" name="dAmount" onchange="validate()" required>
-              <option value="select">Select</option>
-              <option value="$5">5</option>
-              <option value="$10">10</option>
-              <option value="$20">20</option>
-              <option value="$50">50</option>
-              <option value="$100">100</option>
-            </select>
+          <span>$</span>
+          <input type="number">
+          <div id="payType">
+            <input type="radio" name="payType" id="monthly">
+            <label for="monthly">Monthly</label>
+            <input type="radio" name="payType" id="flatRate">
+            <label for="flatRate">Flat Rate</label>
+          </div>
+        </div>
+
+        <div class="formRow">
+          <label for="message">Send a message to us with your donation.</label>
+          <textarea name="message" id="messageBox"></textarea>
+        </div>
+
+        <div class="formRow">
+          <input type="checkbox" name="newsletter" id="newsletter">
+          <label for="newletter">Sign up for our newsletter</label>
         </div>
 
         </fieldset>
@@ -227,7 +235,7 @@
 
       <!-- buttons -->
       <div id="buttons">
-        <input id="donate" type="submit" value="Donate">
+        <input type="submit" value="Donate" id="donate">
         <input type="reset" value="Reset">
       </div>
 

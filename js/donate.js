@@ -1,8 +1,48 @@
 $("document").ready(function() {
-  $("#donate").click(validate);
+  $("#payment").submit(validate);
+  // $("#donate").click(validate);
 });
 
-function validate() {
+function validate(event) {
+  if(event.preventDefault) {
+    event.preventDefault();
+  } else {
+    event.returnValue = false;
+  }
+  var valid = true;
+  var errorText = document.getElementById("errorMsg");
+  var inputElements = document.querySelectorAll(".formRow input");
+  var selectElements = document.querySelectorAll(".formRow select");
+  var currentElement;
+  try {
+    for(var i = 0; i < inputElements.length; i++) {
+      currentElement = inputElements[i];
+      console.log(currentElement);
+      if(currentElement.value === "" || currentElement.value === currentElement.getAttribute("placeholder")) {
+        currentElement.style.background = "rgb(255, 233, 233)";
+        valid = false;
+      } else {
+        currentElement.style.background = "white";
+      }
+    }
+    for(var i = 0; i < selectElements.length; i++) {
+      currentElement = selectElements[i];
+      if(currentElement.selectedIndex === 0) {
+        currentElement.style.background = "rgb(255, 233, 233)";
+        valid = false;
+      } else {
+        currentElement.style.background = "white";
+      }
+    }
+    if(!valid) {
+      scroll(0, 100);
+      throw "Please enter all information";
+    }
+  } catch(msg) {
+    errorText.style.display = "block";
+    errorText.innerHTML = msg;
+  }
+
   // alert("Test 2");
   var fName = document.getElementById("firstName");
   if (fName.validity.valueMissing || fName.validity.patternMismatch) {
@@ -71,11 +111,11 @@ function validate() {
     expYear.setCustomValidity("");
   }
   var amount = document.getElementById("amount");
-  if(amount.selectedIndex === 0) {
-    amount.setCustomValidity("Please select your donation amount.");
-  } else {
-    amount.setCustomValidity("");
-  }
+  // if(amount.selectedIndex === 0) {
+  //   amount.setCustomValidity("Please select your donation amount.");
+  // } else {
+  //   amount.setCustomValidity("");
+  // }
 }
 
 function sumDigits(numStr) {
