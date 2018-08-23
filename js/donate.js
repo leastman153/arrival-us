@@ -1,18 +1,23 @@
+// Create event listener for window load event to invoke forLoad() function
 if(window.addEventListener) {
   window.addEventListener("load", forLoad);
 } else if (window.attachEvent) {
   window.attachEvent("onload", forLoad);
 }
 
+// Invoked when page is fully loaded
 function forLoad() {
+  // Make sure Flat Rate button is checked, hide email address input, call createEventListeners() to set up all necessary event listeners
   document.getElementById("flatRate").checked = true;
-  // document.getElementById("email").style.display = "none";
+  document.getElementById("email").style.display = "none";
   createEventListeners();
 }
 
+// Create all necessary event listeners
 function createEventListeners() {
   var payment = document.getElementById("payment");
   var newsletter = document.getElementById("newsletter");
+  // Invoke
   if(payment.addEventListener) {
     payment.addEventListener("submit", validate);
   } else if(payment.attachEvent) {
@@ -41,36 +46,41 @@ function validate(event) {
     for(var i = 0; i < inputElements.length; i++) {
       currentElement = inputElements[i];
       if(currentElement.id === "email" && currentElement.style.display === "none") {
-        console.log(currentElement.id);
         continue;
-      } else {
-        // console.log(currentElement.id);
       }
-      if(currentElement.value === "" || currentElement.value === currentElement.getAttribute("placeholder")) {
+      if(currentElement.value === "" || currentElement.value === currentElement.placeholder) {
         currentElement.style.background = "rgb(255, 233, 233)";
+        currentElement.style.border = "2px solid red";
         valid = false;
       } else {
         currentElement.style.background = "white";
+        currentElement.style.border = "white";
       }
     }
     for(var i = 0; i < selectElements.length; i++) {
       currentElement = selectElements[i];
       if(currentElement.selectedIndex === 0) {
         currentElement.style.background = "rgb(255, 233, 233)";
+        currentElement.style.border = "2px solid red";
         valid = false;
       } else {
         currentElement.style.background = "white";
+        currentElement.style.border = "white";
       }
     }
     if(messageBox.value === "") {
       messageBox.style.background = "rgb(255, 233, 233)";
+      messageBox.style.border = "2px solid red";
       valid = false;
     } else {
       messageBox.style.background = "white";
+      currentElement.style.border = "white";
     }
     if(!valid) {
       scroll(0, 100);
       throw "Please enter all information";
+    } else {
+      event.target.submit();
     }
   } catch(msg) {
     errorText.style.display = "block";
@@ -79,7 +89,6 @@ function validate(event) {
 }
 
 function addEmail() {
-  console.log("Test");
   var newsletter = document.getElementById("newsletter");
   var email = document.getElementById("email");
   if(newsletter.checked === true) {
