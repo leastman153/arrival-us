@@ -1,80 +1,100 @@
-$("document").ready(function() {
-  $("#donate").click(validate);
-});
+// Create event listener for window load event to invoke forLoad() function
+if(window.addEventListener) {
+  window.addEventListener("load", forLoad);
+} else if (window.attachEvent) {
+  window.attachEvent("onload", forLoad);
+}
 
-function validate() {
-  // alert("Test 2");
-  var fName = document.getElementById("firstName");
-  if (fName.validity.valueMissing || fName.validity.patternMismatch) {
-      fName.setCustomValidity("Enter your name as it appears on your card.");
-  } else {
-      fName.setCustomValidity("");
+// Invoked when page is fully loaded
+function forLoad() {
+  // Make sure Flat Rate button is checked, hide email address input, call createEventListeners() to set up all necessary event listeners
+  document.getElementById("flatRate").checked = true;
+  document.getElementById("email").style.display = "none";
+  createEventListeners();
+}
+
+// Create all necessary event listeners
+function createEventListeners() {
+  var payment = document.getElementById("payment");
+  var newsletter = document.getElementById("newsletter");
+  // Invoke
+  if(payment.addEventListener) {
+    payment.addEventListener("submit", validate);
+  } else if(payment.attachEvent) {
+    payment.attachEvent("onsubmit", validate);
   }
-  var lName = document.getElementById("lastName");
-  if(lName.validity.valueMissing || lName.validity.patternMismatch) {
-    lName.setCustomValidity("Enter your name as it appears on your card.");
-  } else {
-    lName.setCustomValidity("");
+  if(newsletter.addEventListener) {
+    newsletter.addEventListener("change", addEmail);
+  } else if(email.attachEvent) {
+    newsletter.attachEvent("onchange", addEmail);
   }
-  var street = document.getElementById("street");
-  if(street.validity.valueMissing || street.validity.patternMismatch) {
-    street.setCustomValidity("Enter your full street address.");
+}
+
+function validate(event) {
+  if(event.preventDefault) {
+    event.preventDefault();
   } else {
-    street.setCustomValidity("");
+    event.returnValue = false;
   }
-  var city = document.getElementById("city");
-  if(city.validity.valueMissing || city.validity.patternMismatch) {
-    city.setCustomValidity("Enter your city.");
-  } else {
-    city.setCustomValidity("");
+  var valid = true;
+  var errorText = document.getElementById("errorMsg");
+  var inputElements = document.querySelectorAll(".formRow input");
+  var selectElements = document.querySelectorAll(".formRow select");
+  var messageBox = document.getElementById("messageBox");
+  var currentElement;
+  try {
+    for(var i = 0; i < inputElements.length; i++) {
+      currentElement = inputElements[i];
+      if(currentElement.id === "email" && currentElement.style.display === "none") {
+        continue;
+      }
+      if(currentElement.value === "" || currentElement.value === currentElement.placeholder) {
+        currentElement.style.background = "rgb(255, 233, 233)";
+        currentElement.style.border = "2px solid red";
+        valid = false;
+      } else {
+        currentElement.style.background = "white";
+        currentElement.style.border = "white";
+      }
+    }
+    for(var i = 0; i < selectElements.length; i++) {
+      currentElement = selectElements[i];
+      if(currentElement.selectedIndex === 0) {
+        currentElement.style.background = "rgb(255, 233, 233)";
+        currentElement.style.border = "2px solid red";
+        valid = false;
+      } else {
+        currentElement.style.background = "white";
+        currentElement.style.border = "white";
+      }
+    }
+    if(messageBox.value === "") {
+      messageBox.style.background = "rgb(255, 233, 233)";
+      messageBox.style.border = "2px solid red";
+      valid = false;
+    } else {
+      messageBox.style.background = "white";
+      currentElement.style.border = "white";
+    }
+    if(!valid) {
+      scroll(0, 100);
+      throw "Please enter all information";
+    } else {
+      event.target.submit();
+    }
+  } catch(msg) {
+    errorText.style.display = "block";
+    errorText.innerHTML = msg;
   }
-  var state = document.getElementById("state");
-  if(state.selectedIndex === 0) {
-    state.setCustomValidity("Please select your state.");
+}
+
+function addEmail() {
+  var newsletter = document.getElementById("newsletter");
+  var email = document.getElementById("email");
+  if(newsletter.checked === true) {
+    email.style.display = "block";
   } else {
-    state.setCustomValidity("");
-  }
-  var zip = document.getElementById("zip");
-  if(zip.validity.valueMissing || zip.validity.patternMismatch) {
-    zip.setCustomValidity("Please enter your 5 digit zip code.");
-  } else {
-    zip.setCustomValidity("");
-  }
-  var cardNum = document.getElementById("cardNum");
-  if(cardNum.validity.valueMissing || cardNum.validity.patternMismatch || luhn(cardNum.value) == false) {
-    cardNum.setCustomValidity("Please enter your card number as it appears on your card.");
-  } else {
-    cardNum.setCustomValidity("");
-  }
-  var cardCVC = document.getElementById("cardCVC");
-  if(cardCVC.validity.valueMissing || cardCVC.validity.patternMismatch) {
-    cardCVC.setCustomValidity("Please enter your card CVC as it appears on your card.");
-  } else {
-    cardCVC.setCustomValidity("");
-  }
-  var cardType = document.getElementById("cardType");
-  if(cardType.selectedIndex === 0) {
-    cardType.setCustomValidity("Please select your card type.");
-  } else {
-    cardType.setCustomValidity("");
-  }
-  var expMonth = document.getElementById("expMonth");
-  if(expMonth.selectedIndex === 0) {
-    expMonth.setCustomValidity("Please select your card's expiration date.");
-  } else {
-    expMonth.setCustomValidity("");
-  }
-  var expYear = document.getElementById("expYear");
-  if(expYear.selectedIndex === 0) {
-    expYear.setCustomValidity("Please select your card's expiration year.");
-  } else {
-    expYear.setCustomValidity("");
-  }
-  var amount = document.getElementById("amount");
-  if(amount.selectedIndex === 0) {
-    amount.setCustomValidity("Please select your donation amount.");
-  } else {
-    amount.setCustomValidity("");
+    email.style.display = "none";
   }
 }
 

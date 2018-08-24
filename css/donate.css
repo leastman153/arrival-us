@@ -23,6 +23,17 @@ input, label {
   display: block;
 }
 
+#errorMsg {
+  display: none;
+  margin: 0 auto;
+  width: 25%;
+  background-color: rgb(255, 233, 233);
+  text-align: center;
+  color: red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 5px groove red;
+}
+
 div {
   margin-top: 2%;
 }

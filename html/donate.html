@@ -69,25 +69,26 @@
   <main>
     <div class="container">
       <h1>Donator Information</h1>
+      <div id="errorMsg"><strong>Please enter all information.</strong></div>
       <div class="row">
         <div class="col">
-          <form id="payment" action="thankyou.html" method="post">
+          <form id="payment" action="thankyou.html" method="post" novalidate="novalidate">
             <fieldset id="donateInfo">
 
               <div class="formRow" id="nameDiv">
                 <label for="name">Name</label>
-                <input type="text" name="firstName" id="firstName" placeholder="First Name" oninput="validate()" pattern="^[a-zA-Z0-9]{2}.*$" required autofocus>
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name" oninput="validate()" pattern="^[a-zA-Z0-9]{2}.*$" required>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" pattern="^[a-zA-Z0-9]{2}.*$" required autofocus>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" pattern="^[a-zA-Z0-9]{2}.*$" required>
               </div>
 
               <div class="formRow" id="streetDiv">
                 <label for="street">Street</label>
-                <input type="text" name="donateStreet" id="street" placeholder="Street Address" oninput="validate()" pattern="^[a-zA-Z0-9]{2}.*$" required>
+                <input type="text" name="donateStreet" id="street" placeholder="Street Address" pattern="^[a-zA-Z0-9]{2}.*$" required>
               </div>
 
               <div class="formRow" id="cityDiv">
                 <label for="city">City</label>
-                <input type="city" name="donateCity" id="city" placeholder="City" oninput="validate()" pattern="^[a-zA-Z0-9]{2}.*$" required>
+                <input type="city" name="donateCity" id="city" placeholder="City" pattern="^[a-zA-Z0-9]{2}.*$" required>
               </div>
 
               <div class="formRow" id="stateDiv">
@@ -149,25 +150,25 @@
 
               <div class="formRow" id="zipDiv">
                 <label for="zip">Zip</label>
-                <input type="text" name="donateZip" id="zip" placeholder="#####" oninput="validate()" pattern="[0-9]{5}"required>
+                <input type="text" name="donateZip" id="zip" placeholder="#####" pattern="[0-9]{5}"required>
               </div>
         </div>
 
         <div class="col">
           <div class="formRow" id="creditDiv">
             <label for="creditCard">Credit Card Number</label>
-            <input type="text" name="creditNumber" id="cardNum" required oninput="validate()" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" maxlength="19" placeholder="################">
+            <input type="text" name="creditNumber" id="cardNum" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" maxlength="19" placeholder="################">
           </div>
 
           <div class="formRow" id="cvcDiv">
             <label for="cvc">CVC</label>
-            <input type="text" name="cvc" id="cardCVC" pattern="^\d{3,4}$" maxlength="4" oninput="validate()" placeholder="###" required>
+            <input type="text" name="cvc" id="cardCVC" pattern="^\d{3,4}$" maxlength="4" placeholder="###" required>
 
           </div>
 
           <div class="formRow" id="typeDiv">
             <label for="cardType">Credit Card Type</label>
-            <select id="cardType" name="cardType" onchange="validate()" required>
+            <select id="cardType" name="cardType" required>
                 <option value="discover">Select</option>
                 <option value="discover">Discover</option>
                 <option value="mastercard">Mastercard</option>
@@ -178,7 +179,7 @@
 
           <div class="formRow" id="expDiv">
             <label for="cardDate">Card Expiration Date</label>
-            <select id="expMonth" name="expMonth" onchange="validate()" required>
+            <select id="expMonth" name="expMonth" required>
                 <option value="mm">mm</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -194,7 +195,7 @@
                 <option value="12">12</option>
              </select>
             <span> / </span>
-            <select id="expYear" name="expYear" onchange="validate()" required>
+            <select id="expYear" name="expYear" required>
                <option value="yy">yy</option>
                <option value="18">2018</option>
                <option value="19">2019</option>
@@ -206,18 +207,27 @@
           </div>
 
         <div class="formRow" id="amountDiv">
-
-
           <label for="amount">How Much do you want to donate?</label>
-            $
-            <select id="amount" name="dAmount" onchange="validate()" required>
-              <option value="select">Select</option>
-              <option value="$5">5</option>
-              <option value="$10">10</option>
-              <option value="$20">20</option>
-              <option value="$50">50</option>
-              <option value="$100">100</option>
-            </select>
+          <span>$</span>
+          <input type="number">
+          <div id="payType">
+            <input type="radio" name="payType" id="flatRate">
+            <label for="flatRate">Flat Rate</label>
+            <input type="radio" name="payType" id="monthly">
+            <label for="monthly">Monthly</label>
+          </div>
+        </div>
+
+        <div class="formRow">
+          <label for="message">Send a message to us with your donation.</label>
+          <textarea name="message" id="messageBox"></textarea>
+        </div>
+
+        <div class="formRow">
+          <input type="checkbox" name="newsletter" id="newsletter">
+          <label for="newletter">Sign up for our newsletter</label>
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email">
         </div>
 
         </fieldset>
@@ -227,7 +237,7 @@
 
       <!-- buttons -->
       <div id="buttons">
-        <input id="donate" type="submit" value="Donate">
+        <input type="submit" value="Donate" id="donate">
         <input type="reset" value="Reset">
       </div>
 
